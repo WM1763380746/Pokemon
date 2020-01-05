@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+}
+
+.ziyuan-zhen {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/Ziyuan-Zhen.png); 
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ziyuan-zhen-Animation {
+  animation: ziyuanzhen 10s linear infinite;
+}
+
+@keyframes ziyuanzhen {
+    from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 100vh;
+      }
+}
+
+.little-red {
+  width: 88px;
+  height: 99px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  display: none;
+  cursor: grab;
+}
+
+.little-red:active {
+  cursor: grabbing;
+}
+
+.start-game {
+  display: inline-block;
+  width: 536px;
+  height: 36px;
+  background: url(img/start-game.png);
+  background-size: cover;
+  border: 0;
+  position: absolute;
+  top: 60%;
+  left: 32%;
+  outline: 0;
+  cursor: pointer;
+}
+
+.elf-ball {
+  width: 54px;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+}
+
+.geng-gui {
+  display: inline-block;
+  width: 166px;
+  height: 125px;
+  background: url(img/geng-gui.png);
+  position: absolute;
+  top: -125px;
+}
+
+.gui-si {
+  display: inline-block;
+  width: 115px;
+  height: 98px;
+  background: url(img/gui-si.png);
+  background-size: cover;
+  position: absolute;
+  top: -98px;
+}
+
+.guisi-tong {
+  display: inline-block;
+  width: 135px;
+  height: 103px;
+  background: url(img/guisi-tong.png);
+  background-size: cover;
+  position: absolute;
+  top: -103px;
+}
+
+.props-master-ball {
+  display: inline-block;
+  width: 70px;
+  height: 64px;
+  background: url(./img/master-ball.png);
+  position: absolute;
+  top: -70px;
+}
+
+
+.master-ball {
+  width: 70px;
+  height: 64px;
+  position: absolute;
+  top: -70px;
+}
+
+.pause-button {
+  width: 92px;
+  height: 94px;
+  background: url(img/pikachu.png);
+  background-size: contain;
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: none;
+  z-index: 1;
+
+}
+
+.fraction {
+  display: none;
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  left: 8%;
+  top: 5%;
+  color: rgb(36, 36, 85);
+  margin: 0;
+  z-index: 1;
+}
+
+.game-menu {
+  width: 172px;
+  height: 340px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  display: none;
+  background: url(img/game-menu.png);
+  background-size: contain;
+  display: none;
+  z-index: 1;
+}
+
+.continue-the-game {
+  display: block;
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  left: 15px;
+  top: 25%;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.restart-game {
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  left: 15px;
+  bottom: 25%;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.restart-menu {
+  width: 170px;
+  height: 86px;
+  position: absolute;
+  background: url(img/restart.png);
+  bottom: 30%;
+  left: 42.5%;
+  display: none;
+  z-index: 1;
+}
+
+.restart {
+  width: 80%;
+  height: 50%;
+  font-size: 18px;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.game-over {
+  width: 199px;
+  height: 64px;
+  position: absolute;
+  bottom: 50%;
+  left: 42%;
+  background: url(img/game-over.png);
+  display: none;
+  z-index: 1;
+}
+
+.props-naughty-bomb {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: -75px;
+  background: url(img/naughty-bomb.png);
+  background-size: contain;
+}
+
+
+.subdue {
+  display: inline-block;
+  width: 62.6px;
+  height: 57px;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  background: url(img/elf-ball-animation.png);
+  animation: elf-ball-animation .3s steps(5) 1;
+}
+
+
+@keyframes elf-ball-animation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -313px;
+  }
+}
